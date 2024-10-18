@@ -1,6 +1,8 @@
 import React from 'react';
 import { Menu, MapPin, Bell, User } from 'lucide-react';
 
+
+
 const Header: React.FC = () => {
   return (
     <header className="bg-white text-gray-800 p-4 shadow-md">
@@ -15,7 +17,9 @@ const Header: React.FC = () => {
           <ul className="flex space-x-4">
             <li><MapPin size={24} /></li>
             <li><Bell size={24} /></li>
-            <li><User size={24} /></li>
+            <a href='/SignUp' > 
+              <User size={24}  />
+            </a>
           </ul>
         </nav>
       </div>
